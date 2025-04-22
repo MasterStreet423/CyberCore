@@ -12,8 +12,10 @@ config_version=5
 
 config/name="Gemini History Teller"
 run/main_scene="uid://m0bx51xo7qmd"
+config/quit_on_go_back=false
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+boot_splash/image="uid://dlbe84ar3mbii"
+config/icon="uid://dlbe84ar3mbii"
 
 [autoload]
 

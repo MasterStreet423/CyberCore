@@ -8,4 +8,4 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0, 1, 1, 1)
 shadow_color = Color(0, 1, 1, 0.670588)
-shadow_size = 8
+shadow_size = 4

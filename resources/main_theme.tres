@@ -5,7 +5,7 @@
 
 [sub_resource type="FontVariation" id="FontVariation_58jnp"]
 base_font = ExtResource("2_0omi4")
-variation_embolden = 0.27
+variation_embolden = 0.72
 
 [resource]
 default_font = SubResource("FontVariation_58jnp")

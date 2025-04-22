@@ -44,3 +44,8 @@ func update_models(_provider):
 	
 	$model_selector.select(Global.model)
 	
+
+func _notification(what: int) -> void:
+	match what:
+		NOTIFICATION_WM_GO_BACK_REQUEST:
+			get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

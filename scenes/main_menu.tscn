@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://m0bx51xo7qmd"]
+[gd_scene load_steps=8 format=3 uid="uid://m0bx51xo7qmd"]
 
 [ext_resource type="Theme" uid="uid://rrloiod8mhon" path="res://resources/main_theme.tres" id="1_ekxnf"]
 [ext_resource type="StyleBox" uid="uid://dbkvasifqpwri" path="res://resources/button_menu.tres" id="2_bqqt6"]
 [ext_resource type="Script" uid="uid://vfep6f1ltpl0" path="res://scripts/main_menu.gd" id="2_wu84c"]
+[ext_resource type="Texture2D" uid="uid://bh1ptfhs75er4" path="res://assets/bg.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://dlbe84ar3mbii" path="res://assets/logo.png" id="4_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://70ocridfucof" path="res://assets/girl.png" id="6_oa1go"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
 bg_color = Color(0.108721, 0.108721, 0.108721, 1)
@@ -24,45 +27,44 @@ grow_vertical = 2
 theme = ExtResource("1_ekxnf")
 script = ExtResource("2_wu84c")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="background" type="TextureRect" parent="."]
+modulate = Color(0.236979, 0.236979, 0.236979, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.0588235, 0.0588235, 0.0588235, 1)
+texture = ExtResource("3_rtw2f")
+expand_mode = 1
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -157.0
-offset_top = 60.0
-offset_right = 157.0
-offset_bottom = 257.0
+offset_left = -240.0
+offset_right = 240.0
+offset_bottom = 342.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.635294, 0, 0.792157, 1)
-theme_override_colors/font_shadow_color = Color(1, 0.611077, 0.973349, 1)
-theme_override_constants/shadow_offset_x = 6
-theme_override_constants/shadow_outline_size = 10
-theme_override_font_sizes/font_size = 56
-text = "CYBER
- CORE"
-horizontal_alignment = 1
+texture = ExtResource("4_rtw2f")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.125772
-anchor_top = 0.371528
-anchor_right = 0.874228
-anchor_bottom = 0.892361
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -143.0
+offset_top = -108.5
+offset_right = 143.0
+offset_bottom = 108.5
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 theme_override_constants/separation = 27
-metadata/_edit_use_anchors_ = true
 
 [node name="start" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 95)
@@ -90,4 +92,19 @@ anchor_bottom = 1.0
 offset_top = -21.0
 grow_horizontal = 2
 grow_vertical = 0
-text = "alpha 0.0.2"
+text = "alpha 0.0.3"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 0.783854, 0.983114, 1)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -228.0
+offset_top = -307.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("6_oa1go")
+expand_mode = 1
