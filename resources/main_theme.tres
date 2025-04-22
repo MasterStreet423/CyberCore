@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://rrloiod8mhon"]
+
+[ext_resource type="StyleBox" uid="uid://dbkvasifqpwri" path="res://resources/button_menu.tres" id="1_a2l2q"]
+[ext_resource type="FontFile" uid="uid://c7p08l2r4libi" path="res://fonts/Orbitron-VariableFont_wght.ttf" id="2_0omi4"]
+
+[sub_resource type="FontVariation" id="FontVariation_58jnp"]
+base_font = ExtResource("2_0omi4")
+variation_embolden = 0.27
+
+[resource]
+default_font = SubResource("FontVariation_58jnp")
+Button/colors/neon_color = Color(0, 0, 0, 1)
+Button/styles/normal = ExtResource("1_a2l2q")

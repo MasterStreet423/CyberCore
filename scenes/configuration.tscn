@@ -1,0 +1,134 @@
+[gd_scene load_steps=3 format=3 uid="uid://xmfrqx1ts1ip"]
+
+[ext_resource type="Theme" uid="uid://rrloiod8mhon" path="res://resources/main_theme.tres" id="1_7wcdq"]
+[ext_resource type="Script" uid="uid://iimokc1at3gd" path="res://scripts/configuration.gd" id="2_7wcdq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_7wcdq")
+script = ExtResource("2_7wcdq")
+metadata/_edit_vertical_guides_ = [436.0]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0588235, 0.0588235, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 54.0
+offset_right = 190.0
+offset_bottom = 83.0
+text = "PROVIDER: "
+vertical_alignment = 1
+
+[node name="provider_selector" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 54.0
+offset_right = 436.0
+offset_bottom = 87.0
+allow_search = false
+auto_width = true
+auto_height = true
+wraparound_items = false
+item_count = 2
+max_columns = 2
+fixed_column_width = 115
+item_0/text = "GOOGLE"
+item_1/text = "OPENAI"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 97.0
+offset_right = 190.0
+offset_bottom = 126.0
+text = "Api Key: "
+vertical_alignment = 1
+uppercase = true
+
+[node name="api_key" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 97.0
+offset_right = 436.0
+offset_bottom = 126.0
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 141.0
+offset_right = 190.0
+offset_bottom = 170.0
+text = "LANGUAGE: "
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Label3"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 43.0
+offset_right = 240.0
+offset_bottom = 72.0
+text = "MODEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="language" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 141.0
+offset_right = 436.0
+offset_bottom = 170.0
+placeholder_text = "En-Usa, Es-Es, Es-Cl, etc..."
+
+[node name="model_selector" type="ItemList" parent="."]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 239.0
+offset_right = 436.0
+offset_bottom = 477.0
+allow_search = false
+auto_width = true
+auto_height = true
+wraparound_items = false
+
+[node name="save" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 50.0
+offset_right = 120.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "GUARDAR"
+
+[node name="back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = 123.0
+offset_right = 120.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "ATRAS"

@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4ib500jmjgex"]
+
+[ext_resource type="Theme" uid="uid://rrloiod8mhon" path="res://resources/main_theme.tres" id="1_4ebxx"]
+[ext_resource type="Script" uid="uid://dvdl2qipw1pn3" path="res://scripts/popup.gd" id="2_cpc1a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpc1a"]
+bg_color = Color(0.0755208, 0.0755208, 0.0755208, 1)
+shadow_color = Color(0, 1, 1, 0.6)
+shadow_size = 45
+
+[node name="popup" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -208.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4ebxx")
+theme_override_styles/panel = SubResource("StyleBoxFlat_cpc1a")
+script = ExtResource("2_cpc1a")
+
+[node name="story_text" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0666667
+anchor_top = 0.157514
+anchor_right = 0.933333
+anchor_bottom = 0.637283
+grow_horizontal = 2
+wrap_mode = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+anchor_left = 0.0666667
+anchor_top = 0.0361272
+anchor_right = 0.933333
+anchor_bottom = 0.140173
+theme_override_colors/font_shadow_color = Color(0.872396, 0.302158, 0.792206, 1)
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/font_size = 28
+text = "Escribe tu Historia"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="confirm" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25
+anchor_top = 0.849711
+anchor_right = 0.75
+anchor_bottom = 0.933526
+grow_horizontal = 2
+grow_vertical = 0
+text = "ACEPTAR"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+anchor_left = 0.0666667
+anchor_top = 0.674855
+anchor_right = 0.2125
+anchor_bottom = 0.710983
+text = "TONO: "
+metadata/_edit_use_anchors_ = true
+
+[node name="tone_list" type="ItemList" parent="."]
+layout_mode = 0
+anchor_left = 0.25
+anchor_top = 0.674855
+anchor_right = 0.933333
+anchor_bottom = 0.820809
+item_count = 7
+max_columns = 4
+same_column_width = true
+item_0/text = "Otaku"
+item_1/text = "Formal"
+item_2/text = "Informal"
+item_3/text = "NSFW"
+item_4/text = "Girl Mode"
+item_5/text = "Chad Mode"
+item_6/text = "Neutral"
+metadata/_edit_use_anchors_ = true

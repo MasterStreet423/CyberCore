@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://m0bx51xo7qmd"]
+
+[ext_resource type="Theme" uid="uid://rrloiod8mhon" path="res://resources/main_theme.tres" id="1_ekxnf"]
+[ext_resource type="StyleBox" uid="uid://dbkvasifqpwri" path="res://resources/button_menu.tres" id="2_bqqt6"]
+[ext_resource type="Script" uid="uid://vfep6f1ltpl0" path="res://scripts/main_menu.gd" id="2_wu84c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.108721, 0.108721, 0.108721, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0, 1, 1)
+shadow_color = Color(1, 0, 1, 0.384314)
+shadow_size = 13
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ekxnf")
+script = ExtResource("2_wu84c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0588235, 0.0588235, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -157.0
+offset_top = 60.0
+offset_right = 157.0
+offset_bottom = 257.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.635294, 0, 0.792157, 1)
+theme_override_colors/font_shadow_color = Color(1, 0.611077, 0.973349, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/font_size = 56
+text = "CYBER
+ CORE"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.125772
+anchor_top = 0.371528
+anchor_right = 0.874228
+anchor_bottom = 0.892361
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 27
+metadata/_edit_use_anchors_ = true
+
+[node name="start" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 1, 1, 1)
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("2_bqqt6")
+text = "COMENZAR"
+
+[node name="config" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
+text = "CONFIGURACION"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "alpha 0.0.2"
